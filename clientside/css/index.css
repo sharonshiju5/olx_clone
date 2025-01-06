@@ -1,0 +1,12 @@
+body{
+background-color: antiquewhite;
+margin: 0;
+}
+.main{
+
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+}
