@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/sell.css">
+</head>
+<body>
+    <div class="main">
+        <center><h1 class="add">POST YOUR AD</h1></center>
+        <form action="" class="form-contaier">
+            <h1 class="form-head">INCLUDE SOME DETAILS</h1>
+            <label for="brand" class="label-brand">Brand *</label>
+            <input type="text" name="brand" id="brand" class="brand">
+            <label for="year" class="label-year">Year *</label>
+            <input type="text" name="year" id="year" class="year">
+            <label for="fuel" class="label-year">Fuel *</label>
+            <select name="fuel" id="fuel" class="fuel">
+                <option value="">CNG & Hybrid</option>
+                <option value="">Diesel</option>
+                <option value="">Electric</option>
+                <option value="">LPG</option>
+                <option value="">Petrol</option>
+            </select>
+            <label for="transmission" class="label-year">Transmission *</label>
+            <select name="transmission" id="transmission" class="transmission">
+                <option value="">Automatic</option>
+                <option value="">Manual</option>  
+            </select>
+            <label for="km" class="label-brand">KM driven *</label>
+            <input type="text" name="km" id="km" class="brand">
+            <label for="owner" class="label-year">No. of Owners *</label>
+            <select name="owner" id="owner" class="fuel">
+                <option value="">1st</option>
+                <option value="">2nd</option>
+                <option value="">3rd</option>
+                <option value="">4th</option>
+                <option value="">4+</option>
+            </select>
+
+            <label for="description" class="label-year">Description *</label>
+            <textarea name="description" id="description" cols="30" rows="10" class="description">
+
+            </textarea>
+            <span class="des">Include condition, features and reason for selling</span>
+            <hr>
+            <h1 class="head-price">SET A PRICE</h1>
+            <span class="des">Price *</span>
+            <input type="text" name="price" id="price" class="brand">
+            
+            <h1 class="head-photo">Upload up to 20 photos</h1>
+            <input type="file" name="photo" id="photo" multiple>
+            <div class="grid-container">
+                <!-- Repeat this div 16 times for each cell -->
+                <div class="grid-item">
+                  <img src="placeholder-icon.png" alt="Icon">
+                </div>
+                <div class="grid-item">
+                  <img src="placeholder-icon.png" alt="Icon">
+                </div>
+                <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon">
+                  </div>
+                <!-- Add more cells as needed -->
+              </div>
+              <h1 class="head-photo">Confirm your location</h1>
+              <span class="des">State *</span>
+            <input type="text" name="state" id="state" class="brand">
+            <span class="des">City *</span>
+            <input type="text" name="city" id="city" class="brand">
+            <span class="des">Neighbourhood *</span>
+            <input type="text" name="neighbourhood" id="neighbourhood" class="brand">
+              
+              <label for="phone" class="label-brand">Phone Number *</label>
+            <input type="text" name="phone" id="phone" class="brand">
+
+
+            <button class="btn">Post Ad</button>
+
+
+            
+        </form>
+    </div>
+</body>
+</html>

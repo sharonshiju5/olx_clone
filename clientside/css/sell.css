@@ -1,0 +1,185 @@
+body{
+    border: none;
+}
+
+.add{
+    margin-top: 2%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #002F34;
+    font-family: 'Roboto', sans-serif;
+}
+.form-contaier{
+    margin: auto;
+    background: var(--white);
+    border: 1px solid rgba(14, 4, 5, 0.2);
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 55%;
+    height: auto;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.form-head{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 47, 52, 1);
+}
+.label-brand{
+    color: rgba(0, 47, 52, 1);;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 1%;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.brand{
+    height:     40px;
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+input:focus {
+    outline: none !important;
+    border: 3px solid  #00a49f;
+  }
+
+  .label-year{
+    color: rgba(0, 47, 52, 1);;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 1%;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.year{
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+.fuel{
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+select:focus {
+    outline: none !important;
+    border: 3px solid  #00a49f;
+  }
+
+.transmission{
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+.description{
+    height: 80px;
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+}
+.des{
+    display: block;
+    font-size: 12px;
+    font-family:'Roboto', sans-serif;
+    color: rgba(0, 47, 52, 0.64);
+}
+textarea:focus {
+    outline: none !important;
+    border: 3px solid  #00a49f;
+  }
+.head-price{
+    padding-top: 20px;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 47, 52, 1);
+}
+.head-photo{
+    padding-top: 50px;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 47, 52, 1);
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    height: 100%;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+  .grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px; /* Space between cells */
+    width: 100%; /* Optional: make the grid take up full width */
+    max-width: 600px; /* Optional: limit the total width */
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Add padding inside each grid item */
+  }
+  
+  .grid-item img {
+    width: 40px; /* Adjust as needed */
+    height: 60px;
+    opacity: 0.5; /* To match the placeholder's faded look */
+  }
+  .btn{
+    display: block;
+    margin-top: 50px;
+    width: 94%;
+    border: none;
+    height: 100%;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+    
+  }
+  span{
+    margin-top: 1%;
+  }
