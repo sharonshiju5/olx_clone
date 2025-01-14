@@ -9,38 +9,40 @@
 <body>
     <div class="main">
         <center><h1 class="add">POST YOUR AD</h1></center>
-        <form action="" class="form-contaier">
+        <form action="" class="form-contaier" id="form">
             <h1 class="form-head">INCLUDE SOME DETAILS</h1>
-            <label for="brand" class="label-brand">Brand *</label>
+            <label for="brand" class="label-brand" >Brand *</label>
             <input type="text" name="brand" id="brand" class="brand">
+            <label for="brand" class="label-brand" >Name *</label>
+            <input type="text" name="brand" id="name" class="brand">
             <label for="year" class="label-year">Year *</label>
             <input type="text" name="year" id="year" class="year">
             <label for="fuel" class="label-year">Fuel *</label>
             <select name="fuel" id="fuel" class="fuel">
-                <option value="">CNG & Hybrid</option>
-                <option value="">Diesel</option>
-                <option value="">Electric</option>
-                <option value="">LPG</option>
-                <option value="">Petrol</option>
+                <option value="CNG & Hybrid">CNG & Hybrid</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Electric</option>
+                <option value="LPG">LPG</option>
+                <option value="Petrol">Petrol</option>
             </select>
             <label for="transmission" class="label-year">Transmission *</label>
             <select name="transmission" id="transmission" class="transmission">
-                <option value="">Automatic</option>
-                <option value="">Manual</option>  
+                <option >Automatic</option>
+                <option >Manual</option>  
             </select>
             <label for="km" class="label-brand">KM driven *</label>
             <input type="text" name="km" id="km" class="brand">
             <label for="owner" class="label-year">No. of Owners *</label>
             <select name="owner" id="owner" class="fuel">
-                <option value="">1st</option>
-                <option value="">2nd</option>
-                <option value="">3rd</option>
-                <option value="">4th</option>
-                <option value="">4+</option>
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>4+</option>
             </select>
 
             <label for="description" class="label-year">Description *</label>
-            <textarea name="description" id="description" cols="30" rows="10" class="description">
+            <input type="text" id="description"  class="description">
 
             </textarea>
             <span class="des">Include condition, features and reason for selling</span>
@@ -54,12 +56,18 @@
             <div class="grid-container">
                 <!-- Repeat this div 16 times for each cell -->
                 <div class="grid-item">
-                  <img src="placeholder-icon.png" alt="Icon">
+                  <img src="placeholder-icon.png" alt="Icon" id="img1">
                 </div>
                 <div class="grid-item">
-                  <img src="placeholder-icon.png" alt="Icon">
+                  <img src="placeholder-icon.png" alt="Icon" id="img2">
                 </div>
                 <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon" id="img3">
+                  </div>
+                  <div class="grid-item">
+                    <img src="placeholder-icon.png" alt="Icon" id="img4">
+                  </div>
+                  <!-- <div class="grid-item">
                     <img src="placeholder-icon.png" alt="Icon">
                   </div>
                   <div class="grid-item">
@@ -70,13 +78,7 @@
                   </div>
                   <div class="grid-item">
                     <img src="placeholder-icon.png" alt="Icon">
-                  </div>
-                  <div class="grid-item">
-                    <img src="placeholder-icon.png" alt="Icon">
-                  </div>
-                  <div class="grid-item">
-                    <img src="placeholder-icon.png" alt="Icon">
-                  </div>
+                  </div> -->
                 <!-- Add more cells as needed -->
               </div>
               <h1 class="head-photo">Confirm your location</h1>
@@ -97,5 +99,6 @@
             
         </form>
     </div>
+    <script src="../js/sell.js"></script>
 </body>
 </html>
