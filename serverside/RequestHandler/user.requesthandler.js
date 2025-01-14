@@ -42,3 +42,17 @@ export async function loginUser(req,res) {
         {expiresIn:"24h"})
     res.status(200).send({msg:"successfully loged in",token})
 }
+
+
+export async function Home(req,res){
+    try {
+        console.log("end point");
+        console.log(req.user);
+        const _id=req.user.userID;
+        const user=await userSchema.findOne({_id});
+        res.status(200).send({username:user.username,profile:user.profile})
+        
+    } catch (error) {
+        res.status(400).send({error})
+    }
+}
