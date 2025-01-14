@@ -5,10 +5,10 @@ import pkg from 'jsonwebtoken';
 const {sign}=pkg
 
 export async function addUser(req,res) {
-    const {username,phone,email,password,cpassword}=req.body;
+    const {username,phone,email,password,cpassword,profile}=req.body;
     console.log(username,phone,email,password,cpassword);
     //check fields are empty
-    if(!(username&&email&&password&&cpassword))
+    if(!(username&&email&&password&&cpassword&&profile))
      return(res.status(404).send({msg:"fields are empty"}));
  //compare password and confirm password 
     if(password!==cpassword)
@@ -21,7 +21,7 @@ export async function addUser(req,res) {
  const hpassword=await bcrypt.hash(password,10)
  console.log(hpassword);
  // create user
- await userSchema.create({username,phone,email,password:hpassword}).then(()=>{
+ await userSchema.create({username,phone,email,password:hpassword,profile}).then(()=>{
      res.status(201).send({msg:"successfully created"})
  }).catch((error)=>{
      res.status(500).send({error})
