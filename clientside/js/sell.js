@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(res.status==200){
                 const {msg}=await res.json();
                 alert(msg);
-                
+                window.location.href="../index.html";
                 
             }else{
                 const {msg}=await res.json();
