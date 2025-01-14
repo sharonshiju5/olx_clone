@@ -1,3 +1,4 @@
+
 import express from "express"
 import env from "dotenv"
 import connection from "./connection.js";
@@ -7,7 +8,7 @@ env.config()
 
 const app=express();
 app.use(express.static("../clientside"))
-app.use(express.json())
+app.use(express.json({limit:"100mb"}))
 app.use("/api",router)
 
 connection().then(()=>{
