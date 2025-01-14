@@ -12,11 +12,11 @@
         <form action="" class="form-contaier" id="form">
             <h1 class="form-head">INCLUDE SOME DETAILS</h1>
             <label for="brand" class="label-brand" >Brand *</label>
-            <input type="text" name="brand" id="brand" class="brand">
+            <input type="text" name="brand" id="brand" class="brand" required>
             <label for="brand" class="label-brand" >Name *</label>
-            <input type="text" name="brand" id="name" class="brand">
+            <input type="text" name="brand" id="name" class="brand" required>
             <label for="year" class="label-year">Year *</label>
-            <input type="text" name="year" id="year" class="year">
+            <input type="text" name="year" id="year" class="year" required>
             <label for="fuel" class="label-year">Fuel *</label>
             <select name="fuel" id="fuel" class="fuel">
                 <option value="CNG & Hybrid">CNG & Hybrid</option>
@@ -31,7 +31,7 @@
                 <option >Manual</option>  
             </select>
             <label for="km" class="label-brand">KM driven *</label>
-            <input type="text" name="km" id="km" class="brand">
+            <input type="text" name="km" id="km" class="brand" required>
             <label for="owner" class="label-year">No. of Owners *</label>
             <select name="owner" id="owner" class="fuel">
                 <option>1st</option>
@@ -42,17 +42,17 @@
             </select>
 
             <label for="description" class="label-year">Description *</label>
-            <input type="text" id="description"  class="description">
+            <input type="text" id="description"  class="description" required>
 
             </textarea>
             <span class="des">Include condition, features and reason for selling</span>
             <hr>
             <h1 class="head-price">SET A PRICE</h1>
             <span class="des">Price *</span>
-            <input type="text" name="price" id="price" class="brand">
+            <input type="text" name="price" id="price" class="brand" required>
             
             <h1 class="head-photo">Upload up to 20 photos</h1>
-            <input type="file" name="photo" id="photo" multiple>
+            <input type="file" name="photo" id="photo" multiple required>
             <div class="grid-container">
                 <!-- Repeat this div 16 times for each cell -->
                 <div class="grid-item">
@@ -83,14 +83,14 @@
               </div>
               <h1 class="head-photo">Confirm your location</h1>
               <span class="des">State *</span>
-            <input type="text" name="state" id="state" class="brand">
+            <input type="text" name="state" id="state" class="brand" required>
             <span class="des">City *</span>
-            <input type="text" name="city" id="city" class="brand">
+            <input type="text" name="city" id="city" class="brand" required>
             <span class="des">Neighbourhood *</span>
-            <input type="text" name="neighbourhood" id="neighbourhood" class="brand">
+            <input type="text" name="neighbourhood" id="neighbourhood" class="brand" required>
               
               <label for="phone" class="label-brand">Phone Number *</label>
-            <input type="text" name="phone" id="phone" class="brand">
+            <input type="text" name="phone" id="phone" class="brand" required>
 
 
             <button class="btn">Post Ad</button>
